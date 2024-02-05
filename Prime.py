@@ -1,4 +1,4 @@
-num = 6
+num = 1
 
 flag = False
 
@@ -10,8 +10,8 @@ elif num > 1:
             flag = True
             break
 
-if flag:
+    if flag:
          print(num, "is not a prime number")
-else:
+    else:
          print(num, "is a prime number")
 
