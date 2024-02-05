@@ -5,6 +5,7 @@ def fun_Prime(x):
         print(x, "is not a prime number")
     elif x > 1:
         for i in range(2, x):
+            print(i)
             if (x % i) == 0:
                 flag = True
                 break
