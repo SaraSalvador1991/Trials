@@ -17,4 +17,10 @@ def fun_Prime(x):
 
 
 
+def Fibonacci(n):
+
+
+
+
+
 
