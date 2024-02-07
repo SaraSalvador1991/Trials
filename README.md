@@ -1,6 +1,4 @@
 # Trials
-
-
 my first git 
 
 
