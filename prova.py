@@ -59,7 +59,7 @@ n = len(test_list[0]) # number of columns
 # printing original list
 print("The original list is : " + str(test_list))
 #initialize K random
-K = random.randrange(n)
+K = random.randrange(n) # integer chosen randomly in [0,..,n-1]
 print(K)
 # Get Kth Column of Matrix
 # using numpy
