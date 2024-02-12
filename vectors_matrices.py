@@ -20,4 +20,37 @@ print(a_del)
 import panda as pd
 data_cars = pd.read_csv("C:\Users\sara\Desktop\cars.csv") # not working ?
 
+# arrays
+# swap first and last exntrance
+
+def swap(list):
+    n = len(list)
+    t = list[0]
+    list[0] = list[n-1]
+    list[n-1] = t
+    return list
+
+list = [0,1,3,4,5]
+
+print(swap(list))
+
+# ----------------
+#x = [1, 4, 6, 8, 11]
+#index = 1,2
+#x.pop(index)
+
+# print even numbers in a list
+
+x = [1, 4, 5, 8, 11]
+for i in x :
+    if i % 2 != 0:
+        x.remove(i) # remove odd elements from the list
+        print(x)
+
+y = [1, 4, 6, 8, 11]
+for i in y:
+    if i % 2 == 0:
+        y.remove(i)  # remove even elements from the list
+        print(y)
+
 
