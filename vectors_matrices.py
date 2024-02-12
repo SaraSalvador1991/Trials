@@ -15,10 +15,10 @@ print(a_del)
 
 
 
- read data in csv
+read data in csv
 
 import panda as pd
-data_cars = pd.read_csv("C:\Users\sara\Desktop\cars.csv") # not working ?
+data_cars = pd.read_csv("C:\\Users\\sara\\Desktop\\cars.csv") # not working ?
 
 # arrays
 # swap first and last exntrance
