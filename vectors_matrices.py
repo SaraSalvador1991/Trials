@@ -15,9 +15,9 @@ print(a_del)
 
 
 
-# read data in csv
+ read data in csv
 
-#import panda as pd
-#data_cars = pd.read_csv("/Users/sarasalvador/Downloads/cars.csv") # not working ?
+import panda as pd
+data_cars = pd.read_csv("C:\Users\sara\Desktop\cars.csv") # not working ?
 
 
