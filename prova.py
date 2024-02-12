@@ -16,6 +16,7 @@ for i in y:
 print(c_sum)
 
 # -------------
+# print kth column of matrix
 
 import numpy as np
 # initialize list
@@ -31,7 +32,7 @@ res = np.array(test_list)[:,K]
 print("The Kth column of matrix is : " + str(res))
 
 # ---------------
-
+# print kth column of matrix (with k chosen randomly)
 import numpy as np
 import random
 # initialize list
@@ -49,7 +50,7 @@ res = np.array(test_list)[:,K]
 print("The Kth column of matrix is : " + str(res))
 
 # -------------
-
+# print kth row of matrix (with k chosen randomly)
 import numpy as np
 import random
 # initialize list
@@ -65,6 +66,8 @@ print(K)
 res = np.array(test_list)[K,:]
 # printing result
 print("The Kth row of matrix is : " + str(res))
+
+
 
 
 
