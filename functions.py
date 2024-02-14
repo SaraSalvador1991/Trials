@@ -52,6 +52,55 @@ def transpose(X):
   print(t)
 
 
+def my_max(x):
+    MM = 0
+    for i in x:
+        if i > MM:
+            MM = i
+    return(MM)
+
+def my_min(x):
+    m = my_max(x)
+    for i in x:
+        if i < m:
+            m = i
+    return(m)
+
+def neg(x):         # funzione che elimina elementi negativi da stringa
+    for i in reversed(x):
+        if i < 0:
+            x.remove(i)
+    return(x)
+
+
+def pos(x):         # funzione che elimina elementi postitivi da stringa
+    for i in reversed(x):
+        if i >= 0:
+            x.remove(i)
+    return(x)
+
+def MY_MAX(x):
+    if all(i < 0 for i in x):
+        y = [abs(i) for i in x]
+        return(-my_min(y))
+    elif all(i >= 0 for i in x):
+        return(my_max(x))
+    else:
+        return(my_max(neg(x)))
+
+def MY_MIN(x):
+    if all(i < 0 for i in x):
+        y = [abs(i) for i in x]
+        return(-my_max(y))
+    elif all(i >= 0 for i in x):
+        return(my_min(x))
+    else:
+        z = [abs(i) for i in pos(x)]
+        return(-my_max(z))
+
+
+
+
 
 
 
