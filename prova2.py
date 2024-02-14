@@ -111,15 +111,13 @@ x= [-1,2,-3,4,-5]
 print(neg(x))
 
 
-x = [2,-4,5,-19,-11]
+x = [2,4,5,-19,11]
 
 if all(i < 0 for i in x):
     y = [abs(i) for i in x]
     print(-my_min(y))
-elif all(i>=0 for i in x):
-    print(my_max(x))
 else:
-    print(my_max(neg(x)))
+    print(my_max(x))
 
 
 x = [-10,1,-11,25,-2]
