@@ -79,8 +79,8 @@ print(t)
 
 # print second largest number of a list
 
-x = [12,1,100]
-max = 0
+x = [-1,12,-10]
+max = x[0]
 for i in x:
     if i > max:
         max = i
@@ -89,7 +89,7 @@ print(x)
 x.remove(max)
 print(x)
 
-res = 0
+res = x[0]
 for j in x:
     if j > res:
         res = j
