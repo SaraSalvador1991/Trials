@@ -13,13 +13,6 @@ a = [[12,7,3],
 a_del = np.delete(a, 2, 1)
 print(a_del)
 
-
-
-read data in csv
-
-import panda as pd
-data_cars = pd.read_csv("C:\\Users\\sara\\Desktop\\cars.csv") # not working ?
-
 # arrays
 # swap first and last exntrance
 
@@ -42,15 +35,51 @@ print(swap(list))
 # print even numbers in a list
 
 x = [1, 4, 5, 8, 11]
-for i in x :
+for i in reversed(x) :
     if i % 2 != 0:
         x.remove(i) # remove odd elements from the list
-        print(x)
+print(x)
 
 y = [1, 4, 6, 8, 11]
-for i in y:
+for i in reversed(y):
     if i % 2 == 0:
         y.remove(i)  # remove even elements from the list
-        print(y)
+print(y)
 
 
+# Write a Python program to insert a newly created item before the second element in an existing array
+
+import numpy as np
+x = [1, 3, 5, 7, 9]
+x.insert(1,4)
+print(x)
+
+
+#Write a Python program to find the first duplicate element in a given array of integers. Return -1 if there are no such elements.
+
+def find_first_duplicate(nums):
+    num_set = set()
+    no_duplicate = -1
+
+    for i in range(len(nums)):
+
+        if nums[i] in num_set:
+            return nums[i]
+        else:
+            num_set.add(nums[i])
+
+    return no_duplicate
+
+print(find_first_duplicate([1, 2, 3, 4, 4, 5]))
+print(find_first_duplicate([1, 2, 3, 4]))
+print(find_first_duplicate([1, 1, 2, 3, 3, 2, 2]))
+
+print(set([1, 2, 3, 4, 4, 5]))
+x = [1, 2, 3, 4, 4, 5]
+num_set = set(x)
+no_duplicate = -1
+
+for i in range(len(x)):
+
+    if x[i] in num_set:
+        print(i)
