@@ -58,12 +58,12 @@ print(x)
 #Write a Python program to find the first duplicate element in a given array of integers. Return -1 if there are no such elements.
 
 def find_first_duplicate(nums):
-    num_set = set()
+    num_set = set() #start empty set
     no_duplicate = -1
 
     for i in range(len(nums)):
 
-        if nums[i] in num_set:
+        if nums[i] in num_set: # if the element is not in the set add it. the first time an element is already in the set it prints it
             return nums[i]
         else:
             num_set.add(nums[i])
@@ -74,12 +74,13 @@ print(find_first_duplicate([1, 2, 3, 4, 4, 5]))
 print(find_first_duplicate([1, 2, 3, 4]))
 print(find_first_duplicate([1, 1, 2, 3, 3, 2, 2]))
 
-print(set([1, 2, 3, 4, 4, 5]))
-x = [1, 2, 3, 4, 4, 5]
-num_set = set(x)
-no_duplicate = -1
+# Write a Python program to find out if a given array of integers contains any duplicate elements.
+# Return true if any value appears at least twice in the array, and return false if every element is distinct.
 
-for i in range(len(x)):
+x = [1, 2, 3, 4, 5, 11]
+if all(x.count(i) == 1 for i in x):
+    print('False')
+else:
+    print('True')
 
-    if x[i] in num_set:
-        print(i)
+
