@@ -84,3 +84,59 @@ else:
     print('True')
 
 
+# --------------------
+
+#Write a Python program to get the number of occurrences of a specified element in an array.
+
+x = [1,3,5,3,7,9,3]
+n = len(x)
+set = set(x)
+m = len(set)
+c=[0]*m
+for i in set:
+    print("The number of occourances of" , i, "in the array is", x.count(i))
+
+# ----------------------
+
+# Write a Python program that removes all duplicate elements from an array and returns a new array.
+
+x = [2,4,2,6,4,8]
+for i in reversed(x):
+    if x.count((i))>1:
+        x.remove(i)
+print(x)
+
+# -----------
+
+#Write a Python program to find the missing number in a given array of numbers between 10 and 20.
+x = [i for i in range(10,21)]
+print(x)
+
+# ----
+
+x = [10,11,12,13,14,16,17,18,19,20]
+for i in range(len(x)-1):
+    if not x[i+1]==x[i]+1:
+        print("The missing number is ", x[i]+1)
+
+# -----------
+x = [10,11,12,13,14,16,17,18,19,20]
+y = [i for i in range(10,21)]
+# compare the two arrays and find the missing element
+sum1= sum(i for i in y)
+sum2= sum(j for j in x)
+diff = sum1-sum2
+print("The missing element is", diff)
+
+# ------------
+
+
+
+
+
+
+
+
+
+
+
